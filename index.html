@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="searchbox">
+                <input type="text" placeholder="Enter your location" class="inputbox">
+                <button class="fa-solid fa-magnifying-glass" id = "searchbtn"></button>
+            </div>
+        </div>
+    <div class="location-n">
+        <h1>Sorry location not found!!</h1>
+        <img src="./404.png" alt = "404 Error">
+    </div>
+    <div class="weather-body">
+            <img class = "weatherimg" src="./cloud.png" alt="">
+        <div class="weatherbox">
+        <p class="temp">
+            0<sup>°C</sup>
+        </p>
+        <p class="description">
+            Light Rain
+        </p>
+        </div>
+        <div class="weatherdetails">
+            <div class="humdity">
+                <i class="fa-solid fa-droplet"></i>
+                <div class="text">
+                    <span id = "humidity">45%</span>
+                    <p> Humidity</p>
+                </div>
+            </div>
+            <div class="wind">
+                <i class="fa-solid fa-wind"></i>
+                <div class="text">
+                    <span id = "wind-speed">12Km/H</span>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/519e5ea954.js" crossorigin="anonymous"></script>
+</body>
+</html>
